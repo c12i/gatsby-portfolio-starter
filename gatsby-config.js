@@ -7,12 +7,21 @@ const siteMetadata = {
 }
 
 const plugins = [
-  `gatsby-plugin-sass`,
+  {
+    resolve: `gatsby-plugin-sass`,
+    options: {
+      postCssPlugins: [
+        require("tailwindcss"),
+        require("./tailwind.config.js"),
+      ],
+    },
+  },
   `gatsby-plugin-styled-components`,
   `gatsby-transformer-sharp`,
   `gatsby-plugin-sharp`,
   `gatsby-plugin-transition-link`,
   `gatsby-plugin-react-helmet`,
+  `gatsby-plugin-postcss`,
   // `gatsby-plugin-sitemap`,
   {
     resolve: `gatsby-source-filesystem`,

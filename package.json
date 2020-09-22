@@ -39,6 +39,8 @@
     "styled-components": "^5.1.0"
   },
   "devDependencies": {
-    "prettier": "2.0.5"
+    "gatsby-plugin-postcss": "^2.3.12",
+    "prettier": "2.0.5",
+    "tailwindcss": "^1.8.10"
   }
 }
