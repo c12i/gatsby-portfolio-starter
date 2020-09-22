@@ -5,7 +5,7 @@ import Layout from "../components/Layout"
 import Hero from "../components/Hero"
 
 export default () => (
-  <Layout hideLogo>
+  <Layout>
     <SEO title="Home" description="Hello World!" />
     <Hero />
   </Layout>
