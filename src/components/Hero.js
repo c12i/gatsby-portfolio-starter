@@ -8,7 +8,7 @@ const Hero = () => {
       <div className="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
         <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0">
           <img
-            className="object-cover object-center rounded"
+            className="object-cover object-center rounded lg:ml-10"
             alt="hero"
             src={DoogieDoodle}
           />
@@ -18,7 +18,7 @@ const Hero = () => {
             Collins Muriuki
           </h1>
           <p className="mb-8 leading-relaxed">
-            Welcome to my cozy little space on the world wide web where I showcase some of my work and document my learning process through my blogs. As for me, I'm just a guy who writes software and solves problems in mostly Rust, Python and JavaScript.
+            Welcome to my cozy little space on the world wide web!
           </p>
           <div className="flex justify-center">
             <button className="inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">
