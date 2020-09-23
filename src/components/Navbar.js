@@ -16,6 +16,9 @@ const Navbar = ({ hideLogo }) => {
           </Link>
         )}
         <nav className="md:ml-auto flex flex-wrap items-center text-base justify-center">
+          <Link to="/about" className="mr-5 hover:text-indigo-900">
+            About
+          </Link>
           <Link to="/blog" className="mr-5 hover:text-indigo-900">
             Blog
           </Link>
