@@ -1,6 +1,6 @@
 import React from "react"
 
-import AboutHero from "../components/AboutHero"
+import SmallHero from "./SmallHero"
 import AboutInfo from "./AboutInfo"
 import AboutBio from "./AboutBio"
 
@@ -18,7 +18,7 @@ const AboutBlock = ({ hideHero }) => {
     <section className="text-gray-700 font-mono">
       <div className="container py-24 mx-auto flex flex-col">
         <div className="lg:w-4/6 mx-auto">
-          {!hideHero && <AboutHero />}
+          {!hideHero && <SmallHero img="https://dummyimage.com/1200x500" />}
           <div className="flex flex-col sm:flex-row mt-10">
             <AboutInfo
               name="Collins Muriuki"
