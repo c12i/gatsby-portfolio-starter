@@ -4,8 +4,8 @@ const siteMetadata = {
   author: `Collins Muriuki`,
   feature: {
     siteName: `GitHub`,
-    url: `https://github.com/collinsmuriuki`
-  }
+    url: `https://github.com/collinsmuriuki`,
+  },
   // twitterUsername: ``,
   // siteUrl: ``,
 }
