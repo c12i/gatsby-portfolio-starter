@@ -2,7 +2,10 @@ const siteMetadata = {
   title: `C M`,
   description: `Welcome to my cozy little space on the world wide web!`,
   author: `Collins Muriuki`,
-  github: `https://github.com/collinsmuriuki`,
+  feature: {
+    siteName: `GitHub`,
+    url: `https://github.com/collinsmuriuki`
+  }
   // twitterUsername: ``,
   // siteUrl: ``,
 }
