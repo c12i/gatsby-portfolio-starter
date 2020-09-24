@@ -1,15 +1,28 @@
 import React from "react"
+import { useStaticQuery } from "gatsby"
 
-const Footer = () => {
+const query = graphql`
+  {
+    site {
+      siteMetadata {
+        title
+        author
+      }
+    }
+  }
+`
+
+const Footer = ({ lowerFooter }) => {
+  const data = useStaticQuery(query)
+  const { title, author } = data.site.siteMetadata
   return (
-    <footer className="text-gray-700 font-mono">
+    <footer className={`text-gray-700 font-mono ${lowerFooter && 'mt-10'}`}>
       <div className="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col">
         <a className="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
-          <span className="ml-3 text-xl">C</span>
-          <span className="ml-3 text-xl">M</span>
+          <span className="ml-3 text-xl">{title}</span>
         </a>
         <p className="text-sm text-gray-500 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-0 mt-4">
-          © {new Date().getFullYear()} collinsmuriuki
+          © {new Date().getFullYear()} {author}
         </p>
         <span className="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
           <a className="text-gray-500">
