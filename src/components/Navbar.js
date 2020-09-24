@@ -17,7 +17,7 @@ const Navbar = ({ hideLogo }) => {
   const data = useStaticQuery(query)
   const { title } = data.site.siteMetadata
   return (
-    <header className="text-gray-700 font-mono">
+    <header className="text-gray-700">
       <div className="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
         {!hideLogo && (
           <Link

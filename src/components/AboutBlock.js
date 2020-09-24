@@ -15,7 +15,7 @@ loko. 3 wolf moon brooklyn.`
 
 const AboutBlock = ({ hideHero }) => {
   return (
-    <section className="text-gray-700 font-mono">
+    <section className="text-gray-700">
       <div className="container py-24 mx-auto flex flex-col">
         <div className="lg:w-4/6 mx-auto">
           {!hideHero && <SmallHero img="https://dummyimage.com/1200x500" />}

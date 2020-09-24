@@ -5,7 +5,7 @@ import Layout from "../components/Layout"
 const Blogs = () => {
   return (
     <Layout>
-      <section className="text-gray-700 font-mono overflow-hidden">
+      <section className="text-gray-700 overflow-hidden">
         <div className="container px-5 py-24 mx-auto">
           <div className="-my-8">
             <div className="py-8 flex flex-wrap md:flex-no-wrap">
