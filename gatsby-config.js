@@ -10,10 +10,16 @@ const plugins = [
   {
     resolve: `gatsby-plugin-sass`,
     options: {
-      postCssPlugins: [
-        require("tailwindcss"),
-        require("./tailwind.config.js"),
-      ],
+      postCssPlugins: [require("tailwindcss"), require("./tailwind.config.js")],
+    },
+  },
+  {
+    resolve: `gatsby-source-strapi`,
+    options: {
+      apiURL: `http://localhost:1337`,
+      queryLimit: 1000,
+      contentTypes: [`blogs`, `projects`],
+      singleTypes: [`bio`],
     },
   },
   `gatsby-plugin-styled-components`,
