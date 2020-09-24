@@ -8,7 +8,7 @@ const Hero = () => {
       <div className="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
         <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0">
           <img
-            className="object-cover object-center rounded lg:ml-10"
+            className="object-cover object-center rounded lg:ml-12"
             alt="hero"
             src={DoogieDoodle}
           />
@@ -22,10 +22,10 @@ const Hero = () => {
           </p>
           <div className="flex justify-center">
             <button className="inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">
-              Button
+              Github
             </button>
             <button className="ml-4 inline-flex text-gray-700 bg-gray-200 border-0 py-2 px-6 focus:outline-none hover:bg-gray-300 rounded text-lg">
-              Button
+              Contact
             </button>
           </div>
         </div>
