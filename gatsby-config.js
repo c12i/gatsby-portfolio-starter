@@ -2,6 +2,7 @@ const siteMetadata = {
   title: `Hello World`,
   description: `This is my basic starter!`,
   author: `Collins Muriuki`,
+  githubUrl: `https://github.com/collinsmuriuki`,
   // twitterUsername: ``,
   // siteUrl: ``,
 }
