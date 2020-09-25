@@ -1,5 +1,6 @@
 import React from "react"
-import { Link, useStaticQuery, graphql } from "gatsby";
+import { useStaticQuery, graphql } from "gatsby";
+import AniLink from "gatsby-plugin-transition-link/AniLink"
 import Img from "gatsby-image"
 
 const query = graphql`
@@ -59,9 +60,14 @@ const Hero = () => {
             >
               {siteName}
             </button>
-            <Link to="/contact" className="ml-4 inline-flex text-gray-700 bg-gray-200 border-0 py-2 px-6 focus:outline-none hover:bg-gray-300 rounded text-lg">
+            <AniLink
+              swipe
+              direction="up"
+              to="/contact"
+              className="ml-4 inline-flex text-gray-700 bg-gray-200 border-0 py-2 px-6 focus:outline-none hover:bg-gray-300 rounded text-lg"
+            >
               Contact
-            </Link>
+            </AniLink>
           </div>
         </div>
       </div>
