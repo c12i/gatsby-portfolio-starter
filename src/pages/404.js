@@ -3,6 +3,7 @@ import { useStaticQuery } from "gatsby";
 import { FaQuoteRight } from "react-icons/fa"
 import AniLink from "gatsby-plugin-transition-link/AniLink"
 
+import SEO from "../components/SEO"
 import Layout from "../components/Layout"
 
 const query = graphql`
@@ -24,6 +25,7 @@ const Four04 = () => {
   const { author, content, source } = data.site.siteMetadata.quote
   return (
     <Layout hideNav hideFooter>
+      <SEO title="404" />
       <AniLink
         swipe
         direction="down"
