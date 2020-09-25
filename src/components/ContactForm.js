@@ -28,7 +28,7 @@ const ContactForm = () => {
             Contact
           </h1>
           <p className="lg:w-2/3 mx-auto leading-relaxed text-base">
-            {contactInfo || "Let's ktal"}
+            {contactInfo || "Let's talk"}
           </p>
         </div>
         <div className="lg:w-1/2 md:w-2/3 mx-auto">
