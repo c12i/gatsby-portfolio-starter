@@ -30,24 +30,23 @@ const query = graphql`
         }
       }
     }
+
+    site {
+      siteMetadata {
+        projectsInfo
+      }
+    }
   }
 `
 
-const test = []
-
-for (let i = 0; i < 6; i++) {
-  test.push({
-    title: "The Catalyzer",
-    type: "CLI",
-    description:
-      "Photo booth fam kinfolk cold-pressed sriracha leggingsjianbing microdosing tousled waistcoat.",
-    photo: "https://dummyimage.com/601x360",
-  })
-}
-
 const ProjectList = () => {
   const data = useStaticQuery(query)
-  const { edges } = data.allStrapiProjects
+  const {
+    allStrapiProjects: { edges },
+    site: {
+      siteMetadata: { projectsInfo },
+    },
+  } = data
   return (
     <section className="text-gray-700 font-mono">
       <div className="container px-5 py-24 mx-auto">
@@ -56,8 +55,7 @@ const ProjectList = () => {
             Projects
           </h1>
           <p className="lg:w-2/3 mx-auto leading-relaxed text-base">
-            A variety pf projects I have worked on. They vary from command-line
-            tools, libraries to web apps.
+            {projectsInfo}
           </p>
         </div>
         <div className="flex flex-wrap -m-4">

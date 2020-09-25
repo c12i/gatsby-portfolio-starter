@@ -15,7 +15,9 @@ const siteMetadata = {
   email: `murerwacollins@gmail.com`,
   twitter: `collinsmuriuki_`,
   siteUrl: `https://muriuki.dev`,
-  image: `/DoogieDoodle.png`
+  image: `/DoogieDoodle.png`,
+  projectsInfo: `A variety pf projects I have worked on. They vary from command-line
+  tools, libraries to web apps.`,
 }
 
 const plugins = [
