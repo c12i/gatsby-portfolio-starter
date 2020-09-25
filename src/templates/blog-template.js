@@ -85,7 +85,10 @@ const BlogTemplate = ({ data: { blog, bio } }) => {
             </AniLink>
           </div>
         </div>
-        <Disqus config={disqusConfig} />
+        <Disqus
+          className="flex w-full items-center text-sm px-4 py-12"
+          config={disqusConfig}
+        />
       </section>
     </Layout>
   )

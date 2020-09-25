@@ -50,11 +50,11 @@
     display: block;
     overflow-y: scroll;
     max-width: 700px;
-    background: #eee;
+    background: #333;
+    color: yellow;
     padding: 1em;
     font-family: "Consolas", Liberation Mono, Menlo, Courier, monospace;
     font-size: 13px;
     line-height: 20px;
-    border-radius: 2px;
-    border-radius: 2px;
+    border-radius: 0.5rem;
 }
