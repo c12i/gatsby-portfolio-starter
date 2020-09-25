@@ -1,7 +1,7 @@
 import React from "react"
 
 import Layout from "../components/Layout"
-import AboutBlock from "../components/AboutBlock"
+import AboutBlock from "../components/about/AboutBlock"
 
 const About = () => {
   return (

@@ -1,6 +1,6 @@
 import React from "react"
 
-import SmallHero from "./SmallHero"
+import SmallHero from "../SmallHero"
 import AboutInfo from "./AboutInfo"
 import AboutBio from "./AboutBio"
 
