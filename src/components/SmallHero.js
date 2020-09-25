@@ -1,12 +1,13 @@
 import React from "react"
+import Img from "gatsby-image"
 
 const AboutHero = ({ img }) => {
   return (
     <div className="rounded-lg h-64 overflow-hidden">
-      <img
-        alt="content"
+      <Img
+        alt="small hero"
         className="object-cover object-center h-full w-full"
-        src={img}
+        fluid={img}
       />
     </div>
   )
