@@ -4,6 +4,8 @@ import Img from "gatsby-image"
 import AniLink from "gatsby-plugin-transition-link/AniLink"
 import ReactMarkdown from "react-markdown"
 
+import "../css/blog-template.css"
+
 import SEO from "../components/SEO"
 import Layout from "../components/Layout"
 import SmallHero from "../components/SmallHero"
@@ -31,13 +33,13 @@ const BlogTemplate = ({ data: { blog, bio } }) => {
       <section className="container w-full md:max-w-3xl mx-auto md:pt-20">
         <div className="w-full px-4 md:px-6 text-xl text-gray-800 leading-normal">
           <SmallHero img={blogImg} />
-          <h1 className="font-bold font-sans break-normal text-gray-900 pt-6 pb-2 text-3xl md:text-4xl">
+          <h1 className="font-bold break-normal text-gray-900 pt-6 pb-2 text-3xl md:text-4xl">
             {title}
           </h1>
           <p className="text-sm md:text-base font-normal text-gray-600">
             {date}
           </p>
-          <article className="py-6">
+          <article className="py-6 blog-template">
             <ReactMarkdown source={content} />
           </article>
         </div>
