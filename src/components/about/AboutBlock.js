@@ -34,10 +34,6 @@ const query = graphql`
 const AboutBlock = ({ hideHero }) => {
   const data = useStaticQuery(query)
   const {
-    name,
-    working,
-    position,
-    company,
     about,
     photo: {
       childImageSharp: { fluid: photo },
@@ -45,6 +41,7 @@ const AboutBlock = ({ hideHero }) => {
     coverPhoto: {
       childImageSharp: { fluid: cover },
     },
+    ...other
   } = data.strapiBio
   return (
     <section className="text-gray-700">
@@ -52,13 +49,7 @@ const AboutBlock = ({ hideHero }) => {
         <div className="lg:w-4/6 mx-auto">
           {!hideHero && <SmallHero img={cover} />}
           <div className="flex flex-col sm:flex-row mt-10">
-            <AboutInfo
-              name={name}
-              working={working}
-              title={position}
-              company={company}
-              photo={photo}
-            />
+            <AboutInfo photo={photo} {...other} />
             <AboutBio bio={about} />
           </div>
         </div>

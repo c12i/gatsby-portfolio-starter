@@ -1,7 +1,7 @@
 import React from "react"
 import Img from "gatsby-image"
 
-const InfoCard = ({ name, title, company, photo, working }) => {
+const InfoCard = ({ name, position, company, photo, working }) => {
   return (
     <div className="sm:w-1/3 text-center sm:pr-8 sm:py-8">
       <Img
@@ -16,7 +16,7 @@ const InfoCard = ({ name, title, company, photo, working }) => {
         <div className="w-12 h-1 bg-indigo-500 rounded mt-2 mb-4"></div>
         {working && (
           <p className="text-base px-2 text-gray-600">
-            {title} at {company}
+            {position} at {company}
           </p>
         )}
       </div>
