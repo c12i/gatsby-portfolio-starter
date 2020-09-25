@@ -15,7 +15,7 @@ const ContactForm = () => {
             Contact
           </h1>
           <p className="lg:w-2/3 mx-auto leading-relaxed text-base">
-            I will typically respond in 24-48 hours
+            I will typically respond within 24-48 hours
           </p>
         </div>
         <div className="lg:w-1/2 md:w-2/3 mx-auto">
