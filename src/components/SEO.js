@@ -34,7 +34,7 @@ const SEO = ({ title, description }) => {
     <Helmet htmlAttributes={{ lang: "en" }} title={`${title} | ${siteTitle}`}>
       <meta name="description" content={description || siteDescription} />
       <meta name="author" content={author} />
-      <meta name="image" content={image} />
+      <meta name="image" content={`${siteUrl}/${image}`} />
 
       {/* facebook cards */}
       <meta property="og:url" content={siteUrl} />
