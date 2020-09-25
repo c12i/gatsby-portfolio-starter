@@ -1,11 +1,42 @@
 import React from "react"
+import { useStaticQuery, graphql } from "gatsby"
 
 import ProjectListItem from "./ProjectListItem"
 
-const data = []
+const query = graphql`
+  {
+    allStrapiProjects {
+      edges {
+        node {
+          name
+          description
+          github
+          url
+          type {
+            id
+            types
+          }
+          technologies {
+            id
+            name
+          }
+          photo {
+          childImageSharp {
+            fluid {
+              ...GatsbyImageSharpFluid_tracedSVG
+            }
+          }
+        }
+        }
+      }
+    }
+  }
+`
+
+const test = []
 
 for (let i = 0; i < 6; i++) {
-  data.push({
+  test.push({
     title: "The Catalyzer",
     type: "CLI",
     description:
@@ -15,6 +46,8 @@ for (let i = 0; i < 6; i++) {
 }
 
 const ProjectList = () => {
+  const data = useStaticQuery(query)
+  const { edges } = data.allStrapiProjects
   return (
     <section className="text-gray-700 font-mono">
       <div className="container px-5 py-24 mx-auto">
@@ -28,8 +61,8 @@ const ProjectList = () => {
           </p>
         </div>
         <div className="flex flex-wrap -m-4">
-          {data.map((project, idx) => (
-            <ProjectListItem key={idx} {...project} />
+          {edges.map(({ node }, idx) => (
+            <ProjectListItem key={idx} {...node} />
           ))}
         </div>
       </div>
