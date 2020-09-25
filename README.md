@@ -3,7 +3,7 @@
   <img alt="Version" src="https://img.shields.io/badge/version-0.1.0-blue.svg?cacheSeconds=2592000" />
 </p>
 
-> V2 of my portfolio built with [Gatsby](https://gatsbyjs.org/), [Strapi](https://strapi.io) and [Tailwind CSS](https://tailwindcss.com/)
+> V2 of my portfolio built with [Gatsby](https://gatsbyjs.org/), [Strapi](https://strapi.io) and [Tailwind CSS](https://tailwindcss.com/). Contact form emailing is handled by [FormSpree](https://formspree.io/), you will need to add your receiving email in the siteMetadata.
 
 ## Whats Inside
 
@@ -43,6 +43,8 @@ const siteMetadata = {
     content: `Not all those who wander are lost.`,
     source: `The Fellowship of the Ring`,
   },
+  contactInfo: `I will typically respond within 24-48 hours`,
+  email: `murerwacollins@gmail.com`,
   twitterUsername: ``,
   siteUrl: ``,
 }
