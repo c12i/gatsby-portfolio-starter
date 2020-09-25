@@ -6,6 +6,11 @@ const siteMetadata = {
     siteName: `GitHub`,
     url: `https://github.com/collinsmuriuki`,
   },
+  quote: {
+    author: `J.R.R. Tolkien`,
+    content: `Not all those who wander are lost.`,
+    source: `The Fellowship of the Ring`,
+  },
   // twitterUsername: ``,
   // siteUrl: ``,
 }
