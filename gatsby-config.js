@@ -13,8 +13,9 @@ const siteMetadata = {
   },
   contactInfo: `I will typically respond within 24-48 hours`,
   email: `murerwacollins@gmail.com`,
-  // twitterUsername: ``,
-  // siteUrl: ``,
+  twitter: `collinsmuriuki_`,
+  siteUrl: `https://muriuki.dev`,
+  image: `/DoogieDoodle.png`
 }
 
 const plugins = [
