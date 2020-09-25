@@ -3,7 +3,7 @@
   <img alt="Version" src="https://img.shields.io/badge/version-0.1.0-blue.svg?cacheSeconds=2592000" />
 </p>
 
-> V2 of my portfolio built with Gatsby, Strapi and Tailwind CSS
+> V2 of my portfolio built with [Gatsby](https://gatsbyjs.org/), [Strapi](https://strapi.io) and [Tailwind CSS](https://tailwindcss.com/)
 
 ## Whats Inside
 
