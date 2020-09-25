@@ -12,6 +12,7 @@ const siteMetadata = {
     source: `The Fellowship of the Ring`,
   },
   contactInfo: `I will typically respond within 24-48 hours`,
+  email: `murerwacollins@gmail.com`,
   // twitterUsername: ``,
   // siteUrl: ``,
 }

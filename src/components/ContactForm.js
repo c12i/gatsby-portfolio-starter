@@ -8,6 +8,7 @@ const query = graphql`
     site {
       siteMetadata {
         contactInfo
+        email
       }
     }
   }
@@ -15,11 +16,11 @@ const query = graphql`
 
 const ContactForm = () => {
   const data = useStaticQuery(query)
-  const { contactInfo } = data.site.siteMetadata
+  const { contactInfo, email } = data.site.siteMetadata
   return (
     <section className="text-gray-700 relative">
       <form
-        action="https://formspree.io/murerwacollins@gmail.com"
+        action={`https://formspree.io/${email}`}
         method="POST"
         className="container px-5 py-24 mx-auto"
       >
