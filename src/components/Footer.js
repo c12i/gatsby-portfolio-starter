@@ -1,7 +1,7 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 
-import SocialLinks from "../constants/socials"
+import SocialLinks from "../components/SocialLinks"
 
 const query = graphql`
   {
