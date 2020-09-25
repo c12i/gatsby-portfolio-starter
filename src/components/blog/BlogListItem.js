@@ -2,7 +2,7 @@ import React from "react"
 import { FaArrowRight } from "react-icons/fa"
 import AniLink from "gatsby-plugin-transition-link/AniLink"
 
-const BlogListItem = ({ title, category, date, excerpt }) => {
+const BlogListItem = ({ title, category, date, excerpt, slug }) => {
   return (
     <div className="py-8 flex flex-wrap md:flex-no-wrap">
       <div className="md:w-64 md:mb-0 mb-6 flex-shrink-0 flex flex-col">
@@ -17,7 +17,7 @@ const BlogListItem = ({ title, category, date, excerpt }) => {
         </h2>
         <p className="leading-relaxed">{excerpt}</p>
         <AniLink
-          to="/"
+          to={`/blog/${slug}`}
           swipe
           direction="left"
           className="text-indigo-500 cursor-pointer hover:text-gray-900 inline-flex items-center mt-4"
