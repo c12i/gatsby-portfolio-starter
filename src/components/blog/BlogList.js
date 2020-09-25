@@ -1,5 +1,5 @@
 import React from "react"
-import { useStaticQuery } from "gatsby"
+import { useStaticQuery, graphql } from "gatsby"
 
 import BlogListItem from "./BlogListItem"
 
@@ -22,7 +22,7 @@ const query = graphql`
 const BlogList = () => {
   const data = useStaticQuery(query)
   const { edges } = data.allStrapiBlogs
-  
+
   return (
     <section className="text-gray-700 overflow-hidden">
       <div className="container px-5 py-24 mx-auto">
