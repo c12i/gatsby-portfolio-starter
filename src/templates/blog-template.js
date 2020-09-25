@@ -3,6 +3,7 @@ import { graphql } from "gatsby"
 import Img from "gatsby-image"
 import AniLink from "gatsby-plugin-transition-link/AniLink"
 import ReactMarkdown from "react-markdown"
+import { Disqus } from "gatsby-plugin-disqus"
 
 import "../css/blog-template.css"
 
@@ -12,6 +13,7 @@ import SmallHero from "../components/SmallHero"
 
 const BlogTemplate = ({ data: { blog, bio } }) => {
   const {
+    strapiId,
     title,
     category,
     date,
@@ -21,6 +23,12 @@ const BlogTemplate = ({ data: { blog, bio } }) => {
       childImageSharp: { fluid: blogImg },
     },
   } = blog
+
+  let disqusConfig = {
+    identifier: strapiId,
+    title,
+  }
+
   const {
     name,
     photo: {
@@ -77,6 +85,7 @@ const BlogTemplate = ({ data: { blog, bio } }) => {
             </AniLink>
           </div>
         </div>
+        <Disqus config={disqusConfig} />
       </section>
     </Layout>
   )
@@ -85,6 +94,7 @@ const BlogTemplate = ({ data: { blog, bio } }) => {
 export const query = graphql`
   query($slug: String!) {
     blog: strapiBlogs(slug: { eq: $slug }) {
+      strapiId
       title
       category
       date(formatString: "MMMM Do, YYYY")

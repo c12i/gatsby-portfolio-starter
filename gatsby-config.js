@@ -1,3 +1,5 @@
+require("dotenv").config()
+
 const siteMetadata = {
   title: `C M`,
   description: `Welcome to my cozy little space on the world wide web!`,
@@ -21,6 +23,13 @@ const siteMetadata = {
 }
 
 const plugins = [
+  `gatsby-plugin-styled-components`,
+  `gatsby-transformer-sharp`,
+  `gatsby-plugin-sharp`,
+  `gatsby-plugin-transition-link`,
+  `gatsby-plugin-react-helmet`,
+  `gatsby-plugin-postcss`,
+  `gatsby-plugin-sitemap`,
   {
     resolve: `gatsby-plugin-sass`,
     options: {
@@ -36,13 +45,18 @@ const plugins = [
       singleTypes: [`bio`],
     },
   },
-  `gatsby-plugin-styled-components`,
-  `gatsby-transformer-sharp`,
-  `gatsby-plugin-sharp`,
-  `gatsby-plugin-transition-link`,
-  `gatsby-plugin-react-helmet`,
-  `gatsby-plugin-postcss`,
-  // `gatsby-plugin-sitemap`,
+  {
+    resolve: `gatsby-plugin-google-analytics`,
+    options: {
+      trackingId: process.env.GOOGLE_ANALYTICS,
+    },
+  },
+  {
+    resolve: `gatsby-plugin-disqus`,
+    options: {
+      shortname: process.env.DISQUS,
+    },
+  },
   {
     resolve: `gatsby-source-filesystem`,
     options: {
