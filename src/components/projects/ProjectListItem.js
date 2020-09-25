@@ -4,9 +4,9 @@ import { FaGithub, FaGlobe } from "react-icons/fa";
 
 const ProjectListItem = ({
   type,
-  title,
+  name,
   description,
-  photo,
+//   photo,
   technologies,
   github,
   url,
@@ -27,22 +27,22 @@ const ProjectListItem = ({
             {type.types.toUpperCase()}
           </h2>
           <h1 className="title-font text-lg font-medium text-gray-900 mb-3">
-            {title}{" "}
+            {name}{" "}
             {technologies.map(({ id, name }) => (
-              <span key={id} className="border-b text-gray-500 px-3 text-sm">
+              <span key={id} className="text-gray-500 px-2 text-sm" style={{fontSize: 10}}>
                 {name}
               </span>
             ))}
           </h1>
           <p className="leading-relaxed">{description}</p>
-          <div className="text-gray flex">
+          <div className="text-gray flex mt-5">
             <FaGithub
               onClick={() => handleClick(github)}
-              className="m-2 cursor-pointer cursor-pointer hover:text-indigo-500"
+              className="m-2 h-5 w-5 cursor-pointer cursor-pointer hover:text-indigo-500"
             />
             <FaGlobe
               onClick={() => handleClick(url)}
-              className="m-2 cursor-pointer hover:text-indigo-500"
+              className="m-2 h-5 w-5 cursor-pointer hover:text-indigo-500"
             />
           </div>
         </div>
