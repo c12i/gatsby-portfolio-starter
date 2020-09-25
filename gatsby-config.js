@@ -11,6 +11,7 @@ const siteMetadata = {
     content: `Not all those who wander are lost.`,
     source: `The Fellowship of the Ring`,
   },
+  contactInfo: `I will typically respond within 24-48 hours`,
   // twitterUsername: ``,
   // siteUrl: ``,
 }

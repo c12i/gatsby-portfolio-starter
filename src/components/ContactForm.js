@@ -1,8 +1,21 @@
 import React from "react"
+import { useStaticQuery, graphql } from "gatsby"
 
 import SocialLinks from "../components/SocialLinks"
 
+const query = graphql`
+  {
+    site {
+      siteMetadata {
+        contactInfo
+      }
+    }
+  }
+`
+
 const ContactForm = () => {
+  const data = useStaticQuery(query)
+  const { contactInfo } = data.site.siteMetadata
   return (
     <section className="text-gray-700 relative">
       <form
@@ -15,7 +28,7 @@ const ContactForm = () => {
             Contact
           </h1>
           <p className="lg:w-2/3 mx-auto leading-relaxed text-base">
-            I will typically respond within 24-48 hours
+            {contactInfo || "Let's ktal"}
           </p>
         </div>
         <div className="lg:w-1/2 md:w-2/3 mx-auto">
@@ -43,7 +56,10 @@ const ContactForm = () => {
               ></textarea>
             </div>
             <div className="p-2 w-full">
-              <button type="submit" className="flex mx-auto text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg">
+              <button
+                type="submit"
+                className="flex mx-auto text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg"
+              >
                 Submit
               </button>
             </div>
