@@ -67,8 +67,8 @@ const plugins = [
   {
     resolve: "gatsby-plugin-robots-txt",
     options: {
-      host: "https://www.muriuki.dev",
-      sitemap: "https://www.muriuki.dev/sitemap.xml",
+      host: "https://muriuki.dev",
+      sitemap: "https://muriuki.dev/sitemap.xml",
       policy: [{ userAgent: "*", allow: "/" }],
     },
   },
