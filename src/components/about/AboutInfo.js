@@ -3,7 +3,7 @@ import Img from "gatsby-image"
 
 const InfoCard = ({ name, position, company, photo, working }) => {
   return (
-    <div className="sm:w-1/3 text-center sm:pr-8 sm:py-8">
+    <div className="sm:w-1/3 text-center sm:pr-8">
       <Img
         fluid={photo}
         alt="Profile pic"

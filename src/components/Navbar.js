@@ -28,7 +28,7 @@ const Navbar = ({ hideLogo }) => {
             className="flex font-medium items-center text-indigo-900 mb-4 md:mb-0 hover:text-gray-900 font-bold"
           >
             <div className="text-indigo">
-              <span className="text-2xl">{title}</span>
+              <span className="text-2xl tracking-widest">{title}</span>
             </div>
           </AniLink>
         )}
