@@ -67,7 +67,7 @@
     padding: 0.4em;
     font-family: "Consolas", Liberation Mono, Menlo, Courier, monospace;
     font-size: 13px;
-    border-radius: 0.5rem;
+    border-radius: 0.2rem;
 }
 
 .blog-template ul, ol {
@@ -92,7 +92,7 @@
     padding: 0.4em;
     font-family: "Consolas", Liberation Mono, Menlo, Courier, monospace;
     font-size: 13px;
-    border-radius: 0.5rem;
+    border-radius: 0.2rem;
 }
 
 .blog-template ol > li > code {
@@ -102,7 +102,7 @@
     padding: 0.4em;
     font-family: "Consolas", Liberation Mono, Menlo, Courier, monospace;
     font-size: 13px;
-    border-radius: 0.5rem;
+    border-radius: 0.2rem;
 }
 
 .blog-template blockquote > code {
@@ -112,5 +112,5 @@
     padding: 0.4em;
     font-family: "Consolas", Liberation Mono, Menlo, Courier, monospace;
     font-size: 13px;
-    border-radius: 0.5rem; 
+    border-radius: 0.2rem; 
 }
