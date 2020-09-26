@@ -25,7 +25,7 @@ const Footer = ({ lowerFooter }) => {
           to="/"
           swipe
           direction="down"
-          className="flex title-font font-medium items-center md:justify-start justify-center text-gray-900"
+          className="flex title-font font-bold items-center md:justify-start justify-center text-gray-900"
         >
           <span className="ml-3 text-xl">{title}</span>
         </AniLink>
