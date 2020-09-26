@@ -8,7 +8,7 @@ const SocialLinks = () => {
   }
   return data.map(({ icon, url }, idx) => (
     <div
-      className="ml-3 text-gray-500 cursor-pointer hover:text-indigo-500"
+      className="mx-2 text-gray-500 cursor-pointer hover:text-indigo-500"
       key={idx}
       onClick={() => handleClick(url)}
     >

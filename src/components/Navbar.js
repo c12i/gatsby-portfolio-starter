@@ -37,7 +37,7 @@ const Navbar = ({ hideLogo }) => {
             <AniLink
               key={idx}
               to={path}
-              className="mr-5 hover:text-indigo-900"
+              className="mx-3 hover:text-indigo-900"
               swipe
               direction="left"
             >
