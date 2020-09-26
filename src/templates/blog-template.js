@@ -37,7 +37,7 @@ const BlogTemplate = ({ data: { blog, bio } }) => {
   } = bio
   return (
     <Layout>
-      <SEO title={title} description={excerpt} />
+      <SEO title={title} description={excerpt} pageImg={blogImg.src} />
       <section className="container w-full md:max-w-3xl mx-auto md:pt-20">
         <div className="w-full px-4 md:px-6 text-xl text-gray-800 leading-normal">
           <SmallHero img={blogImg} />
@@ -106,6 +106,7 @@ export const query = graphql`
       image {
         childImageSharp {
           fluid {
+            src
             ...GatsbyImageSharpFluid_tracedSVG
           }
         }
@@ -117,7 +118,7 @@ export const query = graphql`
       photo {
         childImageSharp {
           fluid {
-            src
+            ...GatsbyImageSharpFluid_tracedSVG
           }
         }
       }
