@@ -22,7 +22,7 @@ const ContactForm = () => {
       <form
         action={`https://formspree.io/${email}`}
         method="POST"
-        className="container px-5 py-24 mx-auto"
+        className="container px-5 py-20 mx-auto"
       >
         <div className="flex flex-col text-center w-full mb-12">
           <h1 className="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">
