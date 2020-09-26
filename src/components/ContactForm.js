@@ -39,6 +39,7 @@ const ContactForm = () => {
                 className="w-full bg-gray-100 rounded border border-gray-400 focus:outline-none focus:border-indigo-500 text-base px-4 py-2"
                 placeholder="Name"
                 type="text"
+                required
               />
             </div>
             <div className="p-2 w-1/2">
@@ -47,6 +48,7 @@ const ContactForm = () => {
                 placeholder="Email"
                 type="email"
                 name="_replyto"
+                required
               />
             </div>
             <div className="p-2 w-full">
@@ -54,6 +56,7 @@ const ContactForm = () => {
                 className="w-full bg-gray-100 rounded border border-gray-400 focus:outline-none h-48 focus:border-indigo-500 text-base px-4 py-2 resize-none block"
                 placeholder="Message"
                 name="message"
+                required
               ></textarea>
             </div>
             <div className="p-2 w-full">
