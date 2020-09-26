@@ -20,6 +20,8 @@ Project bootstrapped from my [custom starter](https://github.com/collinsmuriuki/
 * gatsby-plugin-robots-txt
 * gatsby-plugin-sitemap
 * gatsby-source-strapi
+* gatsby-plugin-google-analytics
+* gatsby-plugin-disqus
 
 Page data such as my bio, projects and blogs are hosted by a headless content management system (CMS), [Strapi](https://strapi.io).
 
