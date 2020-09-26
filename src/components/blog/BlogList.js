@@ -12,7 +12,7 @@ const query = graphql`
           category
           slug
           excerpt
-          date:created_at(fromNow: true)
+          date(fromNow: true)
         }
       }
     }
