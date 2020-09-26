@@ -58,3 +58,26 @@
     line-height: 20px;
     border-radius: 0.5rem;
 }
+
+.blog-template p > code {
+    display: inline;
+    background: #333;
+    color: yellow;
+    padding: 0.5em;
+    font-family: "Consolas", Liberation Mono, Menlo, Courier, monospace;
+    font-size: 13px;
+    border-radius: 0.5rem;
+}
+
+.blog-template ul, ol {
+    font-size: 1rem;
+    padding: 1rem 0; 
+}
+
+.blog-template ul > li {
+    list-style-type: circle;
+}
+
+.blog-template ol > li {
+    list-style-type: decimal;
+}
