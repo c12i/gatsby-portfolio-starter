@@ -64,14 +64,14 @@ const plugins = [
       path: `${__dirname}/src/images/`,
     },
   },
-  // {
-  //   resolve: "gatsby-plugin-robots-txt",
-  //   options: {
-  //     host: "https://www.example.com",
-  //     sitemap: "https://www.example.com/sitemap.xml",
-  //     policy: [{ userAgent: "*", allow: "/" }],
-  //   },
-  // },
+  {
+    resolve: "gatsby-plugin-robots-txt",
+    options: {
+      host: "https://www.muriuki.dev",
+      sitemap: "https://www.muriuki.dev/sitemap.xml",
+      policy: [{ userAgent: "*", allow: "/" }],
+    },
+  },
 ]
 
 module.exports = {
