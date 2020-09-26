@@ -34,7 +34,10 @@ const SEO = ({ title, description, pageImg }) => {
     <Helmet htmlAttributes={{ lang: "en" }} title={`${title} | ${siteTitle}`}>
       <meta name="description" content={description || siteDescription} />
       <meta name="author" content={author} />
-      <meta name="image" content={`${siteUrl}${pageImg || image}`} />
+      <meta
+        name="image"
+        content={!pageImg ? `${siteUrl}${image}` : `${pageImg}`}
+      />
 
       {/* facebook cards */}
       <meta property="og:url" content={siteUrl} />
@@ -44,7 +47,10 @@ const SEO = ({ title, description, pageImg }) => {
         property="og:description"
         content={description || siteDescription}
       />
-      <meta property="og:image" content={`${siteUrl}/${pageImg || image}`} />
+      <meta
+        property="og:image"
+        content={!pageImg ? `${siteUrl}${image}` : `${pageImg}`}
+      />
       <meta property="og:image:width" content="400" />
       <meta property="og:url:height" content="300" />
 
@@ -56,7 +62,10 @@ const SEO = ({ title, description, pageImg }) => {
         name="twitter:description"
         content={description || siteDescription}
       />
-      <meta name="twitter:image" content={`${siteUrl}${pageImg || image}`} />
+      <meta
+        name="twitter:image"
+        content={!pageImg ? `${siteUrl}${image}` : `${pageImg}`}
+      />
     </Helmet>
   )
 }
