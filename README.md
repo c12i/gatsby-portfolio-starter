@@ -1,9 +1,9 @@
 # portfolio
 <p>
-  <img alt="Version" src="https://img.shields.io/badge/version-0.1.0-blue.svg?cacheSeconds=2592000" />
+  <img alt="Version" src="https://img.shields.io/badge/version-2.0.0-blue.svg?cacheSeconds=2592000" />
 </p>
 
-> V2 of my portfolio built with [Gatsby](https://gatsbyjs.org/), [Strapi](https://strapi.io) and [Tailwind CSS](https://tailwindcss.com/). Contact form emailing is handled by [FormSpree](https://formspree.io/), you will need to add your receiving email in the siteMetadata.
+> v2 of my portfolio built with [Gatsby](https://gatsbyjs.org/), [Strapi](https://strapi.io) and [Tailwind CSS](https://tailwindcss.com/). Contact form emailing is handled by [FormSpree](https://formspree.io/), you will need to add your receiving email in the siteMetadata.
 
 ## Whats Inside
 
@@ -28,8 +28,8 @@ Page data such as my bio, projects and blogs are hosted by a headless content ma
 ## Static data
 Shared and modifiable data
 
-### SiteMetadata
-Information such as the site title, author and description are described [here](https://github.com/collinsmuriuki/portfolio/blob/master/gatsby-config.js)
+#### SiteMetadata
+Information such as the site title, author and description is described [here](https://github.com/collinsmuriuki/portfolio/blob/master/gatsby-config.js)
 
 ```js
 const siteMetadata = {
@@ -55,8 +55,8 @@ const siteMetadata = {
 }
 ```
 
-### routes
-Describes the page routes, code can be found [here](https://github.com/collinsmuriuki/portfolio/blob/master/src/constants/routes.js)
+#### routes
+Describes the page routes corresponding to the components in `src/pages`, code can be found [here](https://github.com/collinsmuriuki/portfolio/blob/master/src/constants/routes.js)
 
 ```js
 export default [
@@ -79,8 +79,8 @@ export default [
 ]
 ```
 
-### Social Icons
-A component containing a combination of svg social icon and it's url. Code can be found [here](https://github.com/collinsmuriuki/portfolio/blob/master/src/constants/socials.js):
+#### Social Icons
+An array of objects containing the social icon and it's url. Adding a social link is as easy as adding an new object to the array containing your `url` and importing the social icon from `react-icons/fa` like in the example below. Code can be found [here](https://github.com/collinsmuriuki/portfolio/blob/master/src/constants/socials.js):
 
 ```js
 // ...
@@ -113,6 +113,7 @@ bio:
   company - short text
   about - long text
   photo - media
+  working - boolean
 
 project:
   name - short text
@@ -155,6 +156,9 @@ yarn
 ```sh
 gatsby develop
 ```
+
+## Collaboration
+Pull requests welcome
 
 ## Author
 
