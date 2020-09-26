@@ -1,7 +1,7 @@
 require("dotenv").config()
 
 const siteMetadata = {
-  title: `C M`,
+  title: `CM`,
   description: `Welcome to my cozy little space on the world wide web!`,
   author: `Collins Muriuki`,
   feature: {
