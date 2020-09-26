@@ -39,7 +39,7 @@ const plugins = [
   {
     resolve: `gatsby-source-strapi`,
     options: {
-      apiURL: `http://localhost:1337`,
+      apiURL: process.env.STRAPI_URL || `http://localhost:1337`,
       queryLimit: 1000,
       contentTypes: [`blogs`, `projects`],
       singleTypes: [`bio`],
