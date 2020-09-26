@@ -51,8 +51,8 @@
     display: block;
     overflow-y: scroll;
     max-width: 700px;
-    background: #333;
-    color: yellow;
+    background: #eee;
+    color: #333;
     padding: 1em;
     font-family: "Consolas", Liberation Mono, Menlo, Courier, monospace;
     font-size: 13px;
@@ -62,9 +62,9 @@
 
 .blog-template p > code {
     display: inline;
-    background: #333;
-    color: yellow;
-    padding: 0.4em;
+    background: #eee;
+    color: #333;
+    padding: 0.2rem;
     font-family: "Consolas", Liberation Mono, Menlo, Courier, monospace;
     font-size: 13px;
     border-radius: 0.2rem;
@@ -87,9 +87,9 @@
 
 .blog-template ul > li > code {
     display: inline;
-    background: #333;
-    color: yellow;
-    padding: 0.4em;
+    background: #eee;
+    color: #333;
+    padding: 0.2rem;
     font-family: "Consolas", Liberation Mono, Menlo, Courier, monospace;
     font-size: 13px;
     border-radius: 0.2rem;
@@ -97,9 +97,9 @@
 
 .blog-template ol > li > code {
     display: inline;
-    background: #333;
-    color: yellow;
-    padding: 0.4em;
+    background: #eee;
+    color: #333;
+    padding: 0.2rem;
     font-family: "Consolas", Liberation Mono, Menlo, Courier, monospace;
     font-size: 13px;
     border-radius: 0.2rem;
@@ -107,9 +107,9 @@
 
 .blog-template blockquote > code {
     display: inline;
-    background: #333;
-    color: yellow;
-    padding: 0.4em;
+    background: #eee;
+    color: #333;
+    padding: 0.2rem;
     font-family: "Consolas", Liberation Mono, Menlo, Courier, monospace;
     font-size: 13px;
     border-radius: 0.2rem; 
