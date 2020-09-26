@@ -58,13 +58,3 @@
     line-height: 20px;
     border-radius: 0.5rem;
 }
-
-.blog-template u {
-    display: inline;
-    font-family: "Consolas", Liberation Mono, Menlo, Courier, monospace;
-    font-size: 13px; 
-    border-radius: 0.5rem;
-    color:yellow;
-    background: #333;
-    padding: 0.5em;
-}
