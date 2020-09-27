@@ -83,7 +83,7 @@
     border-radius: 0.5rem;
 }
 
-.blog-template code, pre {
+.blog-template code {
     display: block;
     overflow-y: scroll;
     max-width: 700px;
