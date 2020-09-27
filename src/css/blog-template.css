@@ -1,4 +1,4 @@
-.blog-template blockquote, pre {
+.blog-template blockquote {
 	padding-left: 15px;
     border-left: 0.5rem solid #eee;
     padding: 0 2rem 0 2rem;
@@ -83,13 +83,13 @@
     border-radius: 0.5rem;
 }
 
-.blog-template code {
+.blog-template code, pre {
     display: block;
     overflow-y: scroll;
     max-width: 700px;
     background: #eee;
     color: #333;
-    padding: 1em;
+    padding: 0.75rem;
     font-family: "Consolas", Liberation Mono, Menlo, Courier, monospace;
     font-size: 13px;
     line-height: 20px;
