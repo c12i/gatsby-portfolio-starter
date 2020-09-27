@@ -1,4 +1,4 @@
-.blog-template blockquote {
+.blog-template blockquote, pre {
 	padding-left: 15px;
     border-left: 0.5rem solid #eee;
     padding: 0 2rem 0 2rem;
@@ -12,39 +12,75 @@
     padding: 1rem 0;
 }
 
+.blog-template u {
+    text-decoration: underline;
+}
+
+.blog-template b, strong {
+    font-weight: bold;
+}
+
+.blog-template i, em {
+    font-style: italic;
+}
+
+.blog-template small {
+    font-size: 0.75rem;
+    color: #888;
+}
+
+.blog-template figcaption {
+    font-size: 0.85rem;
+    text-align: center;
+    color: #888;
+}
+
 .blog-template h1 {
     font-weight: bolder;
-    font-size: 2.6rem;
-    padding: 1rem 0;
+    font-size: 2.4rem;
+    padding: 0.85rem 0;
 }
 
 .blog-template h2 {
     font-weight: bolder;
     font-size: 2rem;
-    padding: 1rem 0;
+    padding: 0.85rem 0;
 }
 
 .blog-template h3 {
     font-weight: bolder;
-    font-size: 1.4rem;
-    padding: 1rem 0;
+    font-size: 1.6rem;
+    padding: 0.85rem 0;
 }
 
 .blog-template h4 {
     font-weight: bolder;
+    font-size: 1.3rem;
+    padding: 0.85rem 0;
+}
+
+.blog-template h5 {
+    font-weight: bolder;
     font-size: 1.2rem;
-    padding: 1rem 0;
+    padding: 0.85rem 0;
+}
+
+.blog-template h6 {
+    font-weight: bolder;
+    font-size: 1.1rem;
+    padding: 0.85rem 0;;
 }
 
 .blog-template p {
-    font-size: 1rem;
-    padding: 1rem 0;
+    font-size: 1.1rem;
+    padding: 0.85rem 0;
 }
 
 .blog-template img {
     display: block;
     margin-left: auto;
     margin-right: auto;
+    border-radius: 0.5rem;
 }
 
 .blog-template code {
@@ -71,8 +107,9 @@
 }
 
 .blog-template ul, ol {
-    font-size: 1rem;
-    padding: 1rem 0 1rem 2rem;
+    font-size: 0.85rem;
+    padding: 0.5rem 0 1rem 2rem;
+    font-size: 1.1rem;
 }
 
 .blog-template ul > li {
@@ -113,6 +150,11 @@
     font-family: "Consolas", Liberation Mono, Menlo, Courier, monospace;
     font-size: 13px;
     border-radius: 0.2rem; 
+}
+
+.blog-template blockquote > a {
+    color: blue;
+    text-decoration: underline; 
 }
 
 .blog-template a {

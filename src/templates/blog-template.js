@@ -2,7 +2,7 @@ import React from "react"
 import { graphql } from "gatsby"
 import Img from "gatsby-image"
 import AniLink from "gatsby-plugin-transition-link/AniLink"
-import ReactMarkdown from "react-markdown"
+import ReactMarkdown from "react-markdown/with-html"
 import { Disqus } from "gatsby-plugin-disqus"
 
 import "../css/blog-template.css"
@@ -48,7 +48,7 @@ const BlogTemplate = ({ data: { blog, bio } }) => {
             {date}
           </p>
           <article className="py-6 blog-template">
-            <ReactMarkdown source={content} />
+            <ReactMarkdown source={content} escapeHtml={false} />
           </article>
         </div>
 
