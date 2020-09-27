@@ -36,7 +36,7 @@ const SEO = ({ title, description, pageImg }) => {
       <meta name="author" content={author} />
       <meta
         name="image"
-        content={!pageImg ? `${siteUrl}${image}` : `${pageImg}`}
+        content={!pageImg ? `${siteUrl}${image}` : `${siteUrl}${pageImg}`}
       />
 
       {/* facebook cards */}
@@ -49,7 +49,7 @@ const SEO = ({ title, description, pageImg }) => {
       />
       <meta
         property="og:image"
-        content={!pageImg ? `${siteUrl}${image}` : `${pageImg}`}
+        content={!pageImg ? `${siteUrl}${image}` : `${siteUrl}${pageImg}`}
       />
       <meta property="og:image:width" content="400" />
       <meta property="og:url:height" content="300" />
@@ -64,7 +64,7 @@ const SEO = ({ title, description, pageImg }) => {
       />
       <meta
         name="twitter:image"
-        content={!pageImg ? `${siteUrl}${image}` : `${pageImg}`}
+        content={!pageImg ? `${siteUrl}${image}` : `${siteUrl}${pageImg}`}
       />
     </Helmet>
   )
