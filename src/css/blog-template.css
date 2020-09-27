@@ -77,12 +77,12 @@
 
 .blog-template ul > li {
     list-style-type: circle;
-    padding: 0.6em 0;
+    padding: 0.4em 0;
 }
 
 .blog-template ol > li {
     list-style-type: decimal;
-    padding: 0.6em 0;
+    padding: 0.4em 0;
 }
 
 .blog-template ul > li > code {
@@ -113,4 +113,9 @@
     font-family: "Consolas", Liberation Mono, Menlo, Courier, monospace;
     font-size: 13px;
     border-radius: 0.2rem; 
+}
+
+.blog-template a {
+    color: blue;
+    text-decoration: underline;
 }
