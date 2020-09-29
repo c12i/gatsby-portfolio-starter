@@ -26,9 +26,11 @@ Project bootstrapped from my [custom starter](https://github.com/collinsmuriuki/
 Page data such as my bio, projects and blogs are hosted by a headless content management system (CMS), [Strapi](https://strapi.io).
 
 ## Static data
+
 Shared and modifiable data
 
 #### SiteMetadata
+
 Information such as the site title, author and description is described [here](https://github.com/collinsmuriuki/portfolio/blob/master/gatsby-config.js)
 
 ```js
@@ -56,6 +58,7 @@ const siteMetadata = {
 ```
 
 #### routes
+
 Describes the page routes corresponding to the components in `src/pages`, code can be found [here](https://github.com/collinsmuriuki/portfolio/blob/master/src/constants/routes.js)
 
 ```js
@@ -80,6 +83,7 @@ export default [
 ```
 
 #### social icons
+
 An array of objects containing the social icon and it's url. Adding a social link is as easy as adding an new object to the array containing your `url` and importing the social icon from `react-icons/fa` like in the example below. Code can be found [here](https://github.com/collinsmuriuki/portfolio/blob/master/src/constants/socials.js):
 
 ```js
@@ -104,6 +108,7 @@ const data = [
 ```
 
 ## Strapi
+
 Create a Strapi project, create a super user and add content-types (bio - singleType, blog & project ~ Strapi will automatically pluralize multipleTypes). Info on getting started with strapi can be found [here](https://strapi.io/documentation/v3.x/getting-started/quick-start.html#_1-install-strapi-and-create-a-new-project).
 Here is a rundown on the schema in pseudo-code:
 ```
@@ -156,8 +161,6 @@ If you are developing your strapi project locally, set the apiUrl as `http://loc
 
 ## Usage as a starter
 
-If you set your strapi `apiUrl` as `http://localhost:1337`, make sure that server is running first.
-
 ```sh
 npx gatsby new project-name https://github.com/collinsmuriuki/portfolio
 ```
@@ -168,7 +171,9 @@ npx gatsby new project-name https://github.com/collinsmuriuki/portfolio
 yarn install
 ```
 
-## Dev server
+## Dev 
+
+If you set your strapi `apiUrl` as `http://localhost:1337`, make sure that server is running first.
 
 ```sh
 gatsby develop
