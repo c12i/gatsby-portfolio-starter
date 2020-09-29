@@ -79,7 +79,7 @@ export default [
 ]
 ```
 
-#### Social Icons
+#### social icons
 An array of objects containing the social icon and it's url. Adding a social link is as easy as adding an new object to the array containing your `url` and importing the social icon from `react-icons/fa` like in the example below. Code can be found [here](https://github.com/collinsmuriuki/portfolio/blob/master/src/constants/socials.js):
 
 ```js
@@ -105,39 +105,58 @@ const data = [
 
 ## Strapi
 Create a Strapi project, create a super user and add content-types (bio - singleType, blog & project ~ Strapi will automatically pluralize multipleTypes). Info on getting started with strapi can be found [here](https://strapi.io/documentation/v3.x/getting-started/quick-start.html#_1-install-strapi-and-create-a-new-project).
-Here is a rundown on the schema:
+Here is a rundown on the schema in pseudo-code:
 ```
-bio:
+bio(singleType):
   name - short text 
   position - short text
   company - short text
   about - long text
   photo - media
   working - boolean
+  coverPhoto - media
 
-project:
+project(collectionType):
   name - short text
   description - long text
   photo - media
   technologies - component(repeatable):
     name
-  type - component(repeatable):
-    name
+  type - enum(...)
   url - short text
   github - short text
 
-blog:
+blog(collectionType):
   title - short text
   content - rich text
   image - media
   slug - (UID attached to title)
-  category - enum:
-    custom variants
+  category - enum(...)
   excerpt - long text
-  date
+  date - datetime
 ```
 
+Once you setup and deploy strapi, simply add your url in `gatsby-config.js` on the plugins object like so:
+
+```js
+// ... plugins
+{
+    resolve: `gatsby-source-strapi`,
+    options: {
+      apiURL: `https://your-api-url.com`,
+      queryLimit: 1000,
+      contentTypes: [`blogs`, `projects`],
+      singleTypes: [`bio`],
+    },
+ },
+//...
+```
+You can optionally choose to store your API url in a `.env` file as `STRAPI_URL="https://your-api-url.com"`.
+If you are developing your strapi project locally, set the apiUrl as `http://localhost:1337`.
+
 ## Usage as a starter
+
+If you set your strapi `apiUrl` as `http://localhost:1337`, make sure that server is running first.
 
 ```sh
 npx gatsby new project-name https://github.com/collinsmuriuki/portfolio
@@ -146,12 +165,10 @@ npx gatsby new project-name https://github.com/collinsmuriuki/portfolio
 ## Install
 
 ```sh
-yarn
+yarn install
 ```
 
 ## Dev server
-
-🚨 Make sure your strapi server is running  before running this command
 
 ```sh
 gatsby develop
