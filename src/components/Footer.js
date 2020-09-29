@@ -16,7 +16,7 @@ const query = graphql`
 
 const Footer = ({ lowerFooter }) => {
   const data = useStaticQuery(query)
-  const { title, author } = data.site.siteMetadata
+  const { author } = data.site.siteMetadata
   return (
     <footer className={`text-gray-700 ${lowerFooter && "mt-15"}`}>
       <div className="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col">

@@ -1,5 +1,5 @@
 import React from "react"
-import { useStaticQuery } from "gatsby";
+import { useStaticQuery, graphql } from "gatsby";
 import { FaQuoteRight } from "react-icons/fa"
 import AniLink from "gatsby-plugin-transition-link/AniLink"
 
