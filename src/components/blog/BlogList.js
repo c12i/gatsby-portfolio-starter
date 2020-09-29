@@ -25,7 +25,7 @@ const BlogList = () => {
 
   return (
     <section className="text-gray-700 overflow-hidden">
-      <div className="container px-5 py-24 mx-auto">
+      <div className="container px-5 md:py-24 py-6 mx-auto">
         <div className="-my-8">
           {edges.map(({ node }, idx) => (
             <BlogListItem key={idx} {...node} />

@@ -45,7 +45,7 @@ const AboutBlock = ({ hideHero }) => {
   } = data.strapiBio
   return (
     <section className="text-gray-700">
-      <div className="container py-24 mx-auto flex flex-col">
+      <div className="container md:py-24 py-0 mx-auto flex flex-col">
         <div className="lg:w-4/6 mx-auto">
           {!hideHero && <SmallHero img={cover} />}
           <div className="flex flex-col sm:flex-row mt-10">
