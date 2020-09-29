@@ -53,7 +53,7 @@ const SingleBlog = ({
           alt="Avatar of Author"
         />
         <div className="flex-1 px-2">
-          <p className="text-base font-bold text-base md:text-xl leading-none mb-2">
+          <p className="text-base font-bold md:text-xl leading-none mb-2">
             {name}
           </p>
         </div>

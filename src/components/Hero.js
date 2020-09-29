@@ -40,8 +40,8 @@ const Hero = () => {
   }
   return (
     <section className="text-gray-700 lg:mt-10">
-      <div className="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
-        <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0">
+      <div className="container mx-auto flex px-5 md:py-24 py-8 md:flex-row flex-col items-center">
+        <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0 md:ml-16 ml-0">
           <Img
             className="object-cover object-center rounded lg:ml-12"
             alt="hero"
@@ -49,7 +49,7 @@ const Hero = () => {
           />
         </div>
         <div className="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center">
-          <h1 className="title-font sm:text-4xl text-3xl mb-4 font-medium">
+          <h1 className="lg:text-5xl mb-4 text-3xl font-medium">
             {author}
           </h1>
           <p className="mb-8 leading-relaxed">{description}</p>
