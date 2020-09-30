@@ -8,10 +8,6 @@ export default [
     name: "Blog",
   },
   {
-    path: "projects",
-    name: "Projects",
-  },
-  {
     path: "contact",
     name: "Contact",
   },
