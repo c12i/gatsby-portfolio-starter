@@ -5,7 +5,7 @@ import Footer from "./Footer"
 
 const Layout = ({ children, hideNav, hideFooter, hideLogo, lowerFooter }) => {
   return (
-    <div className="font-mono">
+    <div className="font-sans">
       {!hideNav && <NavBar hideLogo={hideLogo} />}
       {children}
       {!hideFooter && <Footer lowerFooter={lowerFooter} />}
