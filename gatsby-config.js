@@ -16,7 +16,7 @@ const siteMetadata = {
   contactInfo: `I will typically respond within 24-48 hours`,
   email: `murerwacollins@gmail.com`,
   twitter: `collinsmuriuki_`,
-  siteUrl: `https://muriuki.dev`,
+  siteUrl: `https://muriuki.tk`,
   image: `/DoogieDoodle.png`,
   projectsInfo: `A variety pf projects I have worked on. They vary from command-line
   tools, libraries to web apps.`,
@@ -67,8 +67,8 @@ const plugins = [
   {
     resolve: `gatsby-plugin-robots-txt`,
     options: {
-      host: `https://muriuki.dev`,
-      sitemap: `https://muriuki.dev/sitemap.xml`,
+      host: `https://muriuki.tk`,
+      sitemap: `https://muriuki.tk/sitemap.xml`,
       policy: [{ userAgent: `*`, allow: `/` }],
     },
   },
