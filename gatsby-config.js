@@ -1,8 +1,8 @@
 require("dotenv").config()
 
 const siteMetadata = {
-  title: `CM`,
-  description: `Welcome to my cozy little space on the world wide web!`,
+  title: `0x434d`,
+  description: `Understanding the universe and explaining it to a three-year-old.`,
   author: `Collins Muriuki`,
   feature: {
     siteName: `GitHub`,
